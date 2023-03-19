@@ -29,7 +29,6 @@ const items = [
 ];
 
 for (var i = 0; i < items.length; i++) {
-    console.log("a")
     const cajasGrid = document.getElementById("cajitasGrid")
 
     //start div
