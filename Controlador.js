@@ -28,6 +28,28 @@ const items = [
     }
 ];
 
-for (var i = 0; i < items.length; i++){
+for (var i = 0; i < items.length; i++) {
     console.log("a")
+    const cajasGrid = document.getElementById("cajitasGrid")
+
+    //start div
+    let mainDiv = document.createElement("div");
+    cajasGrid.appendChild(mainDiv);
+    mainDiv.classList.add("caja")
+
+    //elementos
+    let img = document.createElement("img");
+    mainDiv.appendChild(img);
+    img.src = items[i]["image"]
+    
+    let div = document.createElement("div");
+    div.innerHTML = items[i]["title"];
+    mainDiv.appendChild(div);
+    div.classList.add("titulo")
+
+    div = document.createElement("div");
+    div.innerHTML = items[i]["body"];
+    mainDiv.appendChild(div);
+    div.classList.add("titulo")
+
 }
